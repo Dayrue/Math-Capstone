@@ -2,7 +2,6 @@ import pygame as pg
 import numpy as np
 import random
 import matplotlib.pyplot as plt
-import time
 
 pg.init()
 w = 750
@@ -152,7 +151,7 @@ while x < simsRunning:
         simCounter = my_font.render(f'Simulation: {x + 1}/{simsRunning}', False, white)
         dayCounter = my_font.render(f'Day: {i + 1}/{daysRunning}', False, white)
         screen.blit(simCounter, (0, 0))
-        screen.blit(dayCounter, (400, 0))
+        screen.blit(dayCounter, (475, 0))
         gatherData(i)
         pg.display.update()
         i += 1
